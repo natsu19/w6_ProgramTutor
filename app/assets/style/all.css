@@ -48,7 +48,14 @@
         }
 
     .btn{
-        @apply px-8 py-2 rounded-lg duration-500 border border-white hover:bg-none hover:border hover:border-primary hover:text-primary;
+        @apply px-8 py-2 rounded-lg duration-500 
+    }
+    .btn-outline{
+        @apply border border-white hover:border hover:border-primary hover:text-primary;
+    }
+
+    .btn-gradient-sp-r{
+        @apply bg-gradient-sp-r hover:!bg-none hover:ring-1 hover:ring-primary hover:text-primary;;
     }
 
 /* index */

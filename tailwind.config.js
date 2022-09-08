@@ -60,10 +60,6 @@ module.exports = {
       opacity: {
         'initial':'initial',
       },
-      aspectRatio: {
-        '127/71': '127 / 71',
-        '157/114': '157 / 114'
-      },
     },
   },
   plugins: [
