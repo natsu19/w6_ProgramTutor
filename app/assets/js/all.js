@@ -49,6 +49,10 @@ var swiperCourseType = new Swiper(".swiperCourseType", {
   loop: false, // 循环模式选项
 });
 
+AOS.init({
+  once: true,
+});
+
 
 
 
