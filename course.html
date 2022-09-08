@@ -1,10 +1,54 @@
----
-title: 課程介紹
-layout: ./app/layout.ejs
-engine: ejs
-current: course
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>課程介紹｜w6-程式家教</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="./assets/style/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;500;700&family=Noto+Sans+TC:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+  <link rel="bookmark" href="./assets/images/favicon.ico" />
+</head>
+
+<body class="bg-dark text-white lh-1.5">
+  <header class="fixed z-50 w-full bg-dark-secondary">
+    <div class="absolute top-[90px] w-full h-0.5 bg-gradient-ps50"></div>
+    <div class="container py-6">
+      
+      <nav aria-label="mainNavigation" class="nav flex flex-row justify-between h-12 relative md:static overflow-hidden duration-500" aria-current="Nav MainNav">
+        
+        <h1>
+          <a href="index.html" title="回首頁" class="block py-6 indent-[101%] w-11 md:w-[174px] h-[40px] bg-[url('../images/logo.svg')] bg-[length:auto_40px] md:bg-contain bg-no-repeat overflow-hidden whitespace-nowrap hover:opacity-70 duration-500">Coding Home</a>
+        </h1>
+        <!-- ↓ mobile時的漢堡選單btn -->
+        <div class="navToggle relative w-16 h-10 cursor-pointer flex justify-center items-center md:hidden
+        before:absolute before:w-5 before:h-0.5 before:bg-primary before:-translate-y-1.5 before:duration-500
+        after:absolute after:w-5 after:h-0.5 after:bg-primary after:translate-y-0.5 after:duration-500
+        " title="選單"></div>
+
+        
+        <ul class="flex flex-col absolute gap-6 mt-[66px] pt-6 w-full md:flex-row md:gap-8 md:relative md:flex-grow md:justify-end  md:items-center md:mt-0 md:pt-0 text-lg text-center transition">
+          <li><a href="index.html" title="首頁" class="block w-full px-2 bg-dark-secondary hover:text-primary duration-500">首頁</a></li>
+          <li><a href="course.html" title="課程介紹" class="block w-full px-2 hover:text-primary duration-500">課程介紹</a></li>
+          <li><a href="#" title="登入" class="block w-full px-2 hover:text-primary duration-500">
+                <span class="material-icons mr-1.5">account_circle</span>
+                <span class="align-middle">登入</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+  <main class="pt-[90px]">
+  
 <div class="container w-5/6 pt-10.5">
         <nav class="swiper swiperCourseType !w-full" aria-current="Nav CourseType">
             <ul class="swiper-wrapper ">
@@ -96,3 +140,14 @@ current: course
 </div>
 
 
+
+  </main>
+  <footer class="bg-balck/10 text-center text-xs md:text-base py-4 md:py-6 text-[#909090]">
+    Coding Home © 2022 All Rights Reserved
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
