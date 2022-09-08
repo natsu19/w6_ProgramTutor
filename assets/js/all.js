@@ -46,6 +46,9 @@ var swiperCourseType = new Swiper(".swiperCourseType", {
   loop: false // 循环模式选项
 
 });
+AOS.init({
+  once: true
+});
 "use strict";
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
